@@ -7,12 +7,12 @@ import CardContentBack from "./CardContentBack";
 function FlipCard(params) {
 
   return (<Flippy flipOnHover={true} flipOnClick={true} flipDirection="horizontal" className={Style.card}>
-    <FrontSide style={{
+    <FrontSide animationDuration="300" style={{
         backgroundColor: '#FF9D96'
       }}>
       <CardContentFront image={params.img} heading={params.head}/>
     </FrontSide>
-    <BackSide style={{
+    <BackSide animationDuration="300" style={{
         backgroundColor: '#FF9D96'
       }}><CardContentBack/></BackSide>
   </Flippy>)
